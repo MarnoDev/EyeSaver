@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="EyeSaver" customModuleProvider="target">
+            <connections>
+                <outlet property="popover" destination="0r2-cf-HSd" id="1v3-jX-rJE"/>
+            </connections>
+        </customObject>
+        <viewController id="hVY-fv-Tfb" userLabel="Popover View Controller" customClass="PopoverDemoViewController" customModule="EyeSaver" customModuleProvider="target"/>
+        <popover animates="NO" id="0r2-cf-HSd">
+            <connections>
+                <outlet property="contentViewController" destination="hVY-fv-Tfb" id="8GW-fI-ioZ"/>
+            </connections>
+        </popover>
+    </objects>
+</document>

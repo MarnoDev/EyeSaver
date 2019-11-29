@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RelaxRemindWindowController" customModule="EyeSaver" customModuleProvider="target">
+            <connections>
+                <outlet property="rectView" destination="se5-gp-TjO" id="KGf-02-RJt"/>
+                <outlet property="tvHint" destination="kab-pT-vJO" id="IJe-M7-1Tl"/>
+                <outlet property="tvRelaxTime" destination="dOJ-ci-hxT" id="IMG-3v-q5X"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5" customClass="RelaxRemindWindow" customModule="EyeSaver" customModuleProvider="target">
+            <windowStyleMask key="styleMask" fullSizeContentView="YES"/>
+            <rect key="contentRect" x="196" y="240" width="1151" height="751"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="se5-gp-TjO" customClass="RectangleView" customModule="EyeSaver" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="1151" height="751"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <box fixedFrame="YES" boxType="custom" borderType="none" cornerRadius="4" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-xL-EW4">
+                        <rect key="frame" x="0.0" y="150" width="1151" height="450"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" ambiguous="YES" id="St1-Qk-WA9">
+                            <rect key="frame" x="0.0" y="0.0" width="1151" height="450"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOJ-ci-hxT">
+                                    <rect key="frame" x="441" y="347" width="268" height="118"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="00:20" placeholderString="00:20" id="XNE-sc-D0T">
+                                        <font key="font" metaFont="system" size="100"/>
+                                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kab-pT-vJO">
+                                    <rect key="frame" x="0.0" y="135" width="1151" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" alignment="center" title="站起来, 看远方" id="Pkd-uD-pPN">
+                                        <font key="font" size="90" name=".PingFangSC-Regular"/>
+                                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <box fixedFrame="YES" borderType="none" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="TIx-hB-uNZ">
+                                    <rect key="frame" x="319" y="46" width="513" height="83"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <view key="contentView" ambiguous="YES" id="9dp-sT-Xl2">
+                                        <rect key="frame" x="0.0" y="0.0" width="513" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <box ambiguous="YES" boxType="custom" cornerRadius="8" title="Box" titlePosition="noTitle" id="L44-bR-YGp">
+                                                <rect key="frame" x="20" y="15" width="160" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <view key="contentView" id="G3f-Pd-WnF">
+                                                    <rect key="frame" x="1" y="1" width="158" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Voo-qK-ISh">
+                                                            <rect key="frame" x="4" y="3" width="150" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <buttonCell key="cell" type="smallSquare" title="暂停应用" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" inset="2" id="R12-f4-hr8">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" size="18" name=".PingFangSC-Regular"/>
+                                                            </buttonCell>
+                                                            <color key="contentTintColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                            <connections>
+                                                                <action selector="pauseTimer:" target="-2" id="VFZ-5T-VWB"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </view>
+                                                <color key="borderColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            </box>
+                                            <box fixedFrame="YES" boxType="custom" cornerRadius="8" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="XhV-na-L5c">
+                                                <rect key="frame" x="327" y="15" width="160" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <view key="contentView" ambiguous="YES" id="bFO-hr-zeZ">
+                                                    <rect key="frame" x="1" y="1" width="158" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jye-Bz-YGE">
+                                                            <rect key="frame" x="4" y="3" width="150" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <buttonCell key="cell" type="smallSquare" title="跳过" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" inset="2" id="tPV-gE-U7Z">
+                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" size="18" name=".PingFangSC-Regular"/>
+                                                            </buttonCell>
+                                                            <color key="contentTintColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                            <connections>
+                                                                <action selector="closeWindow:" target="-2" id="96K-bN-KUZ"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </view>
+                                                <color key="borderColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                            </box>
+                                        </subviews>
+                                    </view>
+                                </box>
+                            </subviews>
+                        </view>
+                    </box>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="116.5" y="156.5"/>
+        </window>
+    </objects>
+</document>

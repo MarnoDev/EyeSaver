@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E3231AD23560F0200AB1880 /* RelaxTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3231AC23560F0200AB1880 /* RelaxTimeManager.swift */; };
+		2E55237A233381DB00962FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E552379233381DB00962FF3 /* AppDelegate.swift */; };
+		2E55237C233381DC00962FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E55237B233381DC00962FF3 /* Assets.xcassets */; };
+		2E55237F233381DC00962FF3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E55237D233381DC00962FF3 /* MainMenu.xib */; };
+		2E5523852333829400962FF3 /* EyeSaverLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E552377233381DB00962FF3 /* EyeSaverLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E59781F232A31B8009B7945 /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59781B232A31B8009B7945 /* NSBezierPath+CGPath.swift */; };
+		2E597820232A31B8009B7945 /* OGCircularBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59781D232A31B8009B7945 /* OGCircularBarView.swift */; };
+		2E597821232A31B8009B7945 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E59781E232A31B8009B7945 /* Info.plist */; };
+		2E83C6E6233487590047AC89 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83C6E4233487590047AC89 /* AboutWindowController.swift */; };
+		2E83C6E7233487590047AC89 /* AboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E83C6E5233487590047AC89 /* AboutWindowController.xib */; };
+		2EF1F15C232D1DC20033A630 /* RelaxRemindWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF1F15A232D1DC20033A630 /* RelaxRemindWindowController.swift */; };
+		2EF1F161232D33160033A630 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF1F160232D33160033A630 /* RectangleView.swift */; };
+		2EF1F163232D35C80033A630 /* RelaxRemindWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF1F162232D35C80033A630 /* RelaxRemindWindowController.xib */; };
+		2EF1F173232E69B20033A630 /* WorkTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF1F172232E69B20033A630 /* WorkTimerManager.swift */; };
+		2EF1F175232E76EC0033A630 /* ConfigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF1F174232E76EC0033A630 /* ConfigUtils.swift */; };
+		2EF1F178232E7BEF0033A630 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF1F177232E7BEF0033A630 /* TimeUtils.swift */; };
+		6BCD44BE20E5D5480042DC44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD44BD20E5D5480042DC44 /* AppDelegate.swift */; };
+		6BCD44C020E5D5490042DC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BCD44BF20E5D5490042DC44 /* Assets.xcassets */; };
+		6BCD44C320E5D5490042DC44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCD44C120E5D5490042DC44 /* MainMenu.xib */; };
+		6BCD44CD20E5F6350042DC44 /* PopoverDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD44CB20E5F6350042DC44 /* PopoverDemoViewController.swift */; };
+		6BCD44CE20E5F6350042DC44 /* PopoverDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCD44CC20E5F6350042DC44 /* PopoverDemoViewController.xib */; };
+		6BCD44D020E60ADB0042DC44 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD44CF20E60ADB0042DC44 /* EventMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E55237123336CC000962FF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				2E5523852333829400962FF3 /* EyeSaverLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E3231AC23560F0200AB1880 /* RelaxTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimeManager.swift; sourceTree = "<group>"; };
+		2E552377233381DB00962FF3 /* EyeSaverLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeSaverLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E552379233381DB00962FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E55237B233381DC00962FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E55237E233381DC00962FF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2E552380233381DC00962FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E552381233381DC00962FF3 /* EyeSaverLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EyeSaverLauncher.entitlements; sourceTree = "<group>"; };
+		2E59781B232A31B8009B7945 /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
+		2E59781C232A31B8009B7945 /* OGCircularBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGCircularBar.h; sourceTree = "<group>"; };
+		2E59781D232A31B8009B7945 /* OGCircularBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OGCircularBarView.swift; sourceTree = "<group>"; };
+		2E59781E232A31B8009B7945 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E83C6E4233487590047AC89 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		2E83C6E5233487590047AC89 /* AboutWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindowController.xib; sourceTree = "<group>"; };
+		2EF1F15A232D1DC20033A630 /* RelaxRemindWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxRemindWindowController.swift; sourceTree = "<group>"; };
+		2EF1F160232D33160033A630 /* RectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		2EF1F162232D35C80033A630 /* RelaxRemindWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelaxRemindWindowController.xib; sourceTree = "<group>"; };
+		2EF1F172232E69B20033A630 /* WorkTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimerManager.swift; sourceTree = "<group>"; };
+		2EF1F174232E76EC0033A630 /* ConfigUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtils.swift; sourceTree = "<group>"; };
+		2EF1F177232E7BEF0033A630 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		6BCD44BA20E5D5480042DC44 /* EyeSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCD44BD20E5D5480042DC44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BCD44BF20E5D5490042DC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BCD44C220E5D5490042DC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6BCD44C420E5D5490042DC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BCD44C520E5D5490042DC44 /* PopoverDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PopoverDemo.entitlements; sourceTree = "<group>"; };
+		6BCD44CB20E5F6350042DC44 /* PopoverDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverDemoViewController.swift; sourceTree = "<group>"; };
+		6BCD44CC20E5F6350042DC44 /* PopoverDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverDemoViewController.xib; sourceTree = "<group>"; };
+		6BCD44CF20E60ADB0042DC44 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E552374233381DB00962FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCD44B720E5D5480042DC44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E552378233381DB00962FF3 /* EyeSaverLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				2E552379233381DB00962FF3 /* AppDelegate.swift */,
+				2E55237B233381DC00962FF3 /* Assets.xcassets */,
+				2E55237D233381DC00962FF3 /* MainMenu.xib */,
+				2E552380233381DC00962FF3 /* Info.plist */,
+				2E552381233381DC00962FF3 /* EyeSaverLauncher.entitlements */,
+			);
+			path = EyeSaverLauncher;
+			sourceTree = "<group>";
+		};
+		2E59781A232A31B8009B7945 /* OGCircularBar */ = {
+			isa = PBXGroup;
+			children = (
+				2E59781B232A31B8009B7945 /* NSBezierPath+CGPath.swift */,
+				2E59781C232A31B8009B7945 /* OGCircularBar.h */,
+				2E59781D232A31B8009B7945 /* OGCircularBarView.swift */,
+				2E59781E232A31B8009B7945 /* Info.plist */,
+			);
+			path = OGCircularBar;
+			sourceTree = "<group>";
+		};
+		2EF1F176232E7BB10033A630 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2EF1F174232E76EC0033A630 /* ConfigUtils.swift */,
+				2EF1F177232E7BEF0033A630 /* TimeUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6BCD44B120E5D5480042DC44 = {
+			isa = PBXGroup;
+			children = (
+				2E59781A232A31B8009B7945 /* OGCircularBar */,
+				6BCD44BC20E5D5480042DC44 /* EyeSaver */,
+				2E552378233381DB00962FF3 /* EyeSaverLauncher */,
+				6BCD44BB20E5D5480042DC44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BCD44BB20E5D5480042DC44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BCD44BA20E5D5480042DC44 /* EyeSaver.app */,
+				2E552377233381DB00962FF3 /* EyeSaverLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BCD44BC20E5D5480042DC44 /* EyeSaver */ = {
+			isa = PBXGroup;
+			children = (
+				2EF1F176232E7BB10033A630 /* Utils */,
+				6BCD44BF20E5D5490042DC44 /* Assets.xcassets */,
+				6BCD44BD20E5D5480042DC44 /* AppDelegate.swift */,
+				6BCD44C120E5D5490042DC44 /* MainMenu.xib */,
+				6BCD44CF20E60ADB0042DC44 /* EventMonitor.swift */,
+				6BCD44CB20E5F6350042DC44 /* PopoverDemoViewController.swift */,
+				6BCD44CC20E5F6350042DC44 /* PopoverDemoViewController.xib */,
+				2EF1F15A232D1DC20033A630 /* RelaxRemindWindowController.swift */,
+				2EF1F162232D35C80033A630 /* RelaxRemindWindowController.xib */,
+				2EF1F160232D33160033A630 /* RectangleView.swift */,
+				2EF1F172232E69B20033A630 /* WorkTimerManager.swift */,
+				2E3231AC23560F0200AB1880 /* RelaxTimeManager.swift */,
+				2E83C6E4233487590047AC89 /* AboutWindowController.swift */,
+				2E83C6E5233487590047AC89 /* AboutWindowController.xib */,
+				6BCD44C520E5D5490042DC44 /* PopoverDemo.entitlements */,
+				6BCD44C420E5D5490042DC44 /* Info.plist */,
+			);
+			path = EyeSaver;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E552376233381DB00962FF3 /* EyeSaverLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E552382233381DC00962FF3 /* Build configuration list for PBXNativeTarget "EyeSaverLauncher" */;
+			buildPhases = (
+				2E552373233381DB00962FF3 /* Sources */,
+				2E552374233381DB00962FF3 /* Frameworks */,
+				2E552375233381DB00962FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeSaverLauncher;
+			productName = EyeSaverLauncher;
+			productReference = 2E552377233381DB00962FF3 /* EyeSaverLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BCD44B920E5D5480042DC44 /* EyeSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCD44C820E5D5490042DC44 /* Build configuration list for PBXNativeTarget "EyeSaver" */;
+			buildPhases = (
+				6BCD44B620E5D5480042DC44 /* Sources */,
+				6BCD44B720E5D5480042DC44 /* Frameworks */,
+				6BCD44B820E5D5480042DC44 /* Resources */,
+				2E55237123336CC000962FF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeSaver;
+			productName = PopoverDemo;
+			productReference = 6BCD44BA20E5D5480042DC44 /* EyeSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BCD44B220E5D5480042DC44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = 5km;
+				TargetAttributes = {
+					2E552376233381DB00962FF3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6BCD44B920E5D5480042DC44 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 6BCD44B520E5D5480042DC44 /* Build configuration list for PBXProject "EyeSaver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BCD44B120E5D5480042DC44;
+			productRefGroup = 6BCD44BB20E5D5480042DC44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BCD44B920E5D5480042DC44 /* EyeSaver */,
+				2E552376233381DB00962FF3 /* EyeSaverLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E552375233381DB00962FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55237C233381DC00962FF3 /* Assets.xcassets in Resources */,
+				2E55237F233381DC00962FF3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCD44B820E5D5480042DC44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E597821232A31B8009B7945 /* Info.plist in Resources */,
+				6BCD44C020E5D5490042DC44 /* Assets.xcassets in Resources */,
+				2EF1F163232D35C80033A630 /* RelaxRemindWindowController.xib in Resources */,
+				2E83C6E7233487590047AC89 /* AboutWindowController.xib in Resources */,
+				6BCD44C320E5D5490042DC44 /* MainMenu.xib in Resources */,
+				6BCD44CE20E5F6350042DC44 /* PopoverDemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E552373233381DB00962FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55237A233381DB00962FF3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCD44B620E5D5480042DC44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF1F178232E7BEF0033A630 /* TimeUtils.swift in Sources */,
+				6BCD44D020E60ADB0042DC44 /* EventMonitor.swift in Sources */,
+				2EF1F175232E76EC0033A630 /* ConfigUtils.swift in Sources */,
+				2E3231AD23560F0200AB1880 /* RelaxTimeManager.swift in Sources */,
+				2EF1F173232E69B20033A630 /* WorkTimerManager.swift in Sources */,
+				2EF1F161232D33160033A630 /* RectangleView.swift in Sources */,
+				2E59781F232A31B8009B7945 /* NSBezierPath+CGPath.swift in Sources */,
+				2E83C6E6233487590047AC89 /* AboutWindowController.swift in Sources */,
+				2E597820232A31B8009B7945 /* OGCircularBarView.swift in Sources */,
+				6BCD44BE20E5D5480042DC44 /* AppDelegate.swift in Sources */,
+				6BCD44CD20E5F6350042DC44 /* PopoverDemoViewController.swift in Sources */,
+				2EF1F15C232D1DC20033A630 /* RelaxRemindWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E55237D233381DC00962FF3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E55237E233381DC00962FF3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		6BCD44C120E5D5490042DC44 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BCD44C220E5D5490042DC44 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E552383233381DC00962FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSaverLauncher/EyeSaverLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 2GD9KGFG9R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = EyeSaverLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.marno.EyeSaverLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2E552384233381DC00962FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSaverLauncher/EyeSaverLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 2GD9KGFG9R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = EyeSaverLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.marno.EyeSaverLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6BCD44C620E5D5490042DC44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BCD44C720E5D5490042DC44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6BCD44C920E5D5490042DC44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSaver/PopoverDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 2GD9KGFG9R;
+				INFOPLIST_FILE = EyeSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.marno.eyesaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6BCD44CA20E5D5490042DC44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EyeSaver/PopoverDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 2GD9KGFG9R;
+				INFOPLIST_FILE = EyeSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.marno.eyesaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E552382233381DC00962FF3 /* Build configuration list for PBXNativeTarget "EyeSaverLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E552383233381DC00962FF3 /* Debug */,
+				2E552384233381DC00962FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCD44B520E5D5480042DC44 /* Build configuration list for PBXProject "EyeSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCD44C620E5D5490042DC44 /* Debug */,
+				6BCD44C720E5D5490042DC44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCD44C820E5D5490042DC44 /* Build configuration list for PBXNativeTarget "EyeSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCD44C920E5D5490042DC44 /* Debug */,
+				6BCD44CA20E5D5490042DC44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BCD44B220E5D5480042DC44 /* Project object */;
+}

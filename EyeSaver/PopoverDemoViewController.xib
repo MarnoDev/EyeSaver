@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PopoverDemoViewController" customModule="EyeSaver" customModuleProvider="target">
+            <connections>
+                <outlet property="barView" destination="o2i-Lf-Nia" id="o6L-Xp-2YF"/>
+                <outlet property="btnDisableWhenLockScreen" destination="hfR-3z-b7C" id="xIf-6u-ne1"/>
+                <outlet property="btnEnableMenubarTimer" destination="wIr-Kt-eWZ" id="fsN-Sl-XhA"/>
+                <outlet property="btnEnableRightClick" destination="taz-RQ-5By" id="gad-4w-a9d"/>
+                <outlet property="btnEnableSpace" destination="Xr2-nr-pNc" id="msa-m8-Cdf"/>
+                <outlet property="btnReset" destination="pBY-7r-peK" id="Hcc-6O-goH"/>
+                <outlet property="btnSkip" destination="Bf4-1b-WIn" id="HvS-Gv-HAC"/>
+                <outlet property="btnStart" destination="Shj-MA-QYN" id="C6t-Jb-P6Z"/>
+                <outlet property="btnStartWhenMacLogin" destination="RnL-i7-Ygq" id="wFt-b8-pZd"/>
+                <outlet property="btnStop" destination="Bf4-1b-WIn" id="Qhb-2Y-Aoc"/>
+                <outlet property="inputHintText" destination="Kk4-tZ-JnD" id="IZQ-HY-Dvi"/>
+                <outlet property="segment" destination="W83-aA-6Cd" id="KR4-L6-Yio"/>
+                <outlet property="sliderRelaxTime" destination="KRj-ZH-vFV" id="lC7-Y1-Vas"/>
+                <outlet property="sliderStopTimeInterval" destination="aVi-cP-rgZ" id="hQo-0q-cmj"/>
+                <outlet property="sliderWorkTime" destination="e7B-ZD-hIU" id="Lzm-mn-DqW"/>
+                <outlet property="tabView" destination="6DS-XU-HoO" id="kYb-ca-QRZ"/>
+                <outlet property="tvRelaxTimeLength" destination="fvc-md-Q5p" id="eNh-lK-unS"/>
+                <outlet property="tvStopIntervalTime" destination="QG4-iX-IWa" id="Qca-25-Gp1"/>
+                <outlet property="tvTimeDisplay" destination="2cR-FZ-Boo" id="qvQ-Ot-ggK"/>
+                <outlet property="tvWorkTimeLength" destination="mCZ-6C-RlG" id="pUw-Wa-0I7"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="386"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTx-6V-u8A">
+                    <rect key="frame" x="0.0" y="350" width="36" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSStopProgressTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="wo3-Op-yCz">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quitApp:" target="-2" id="ZiT-sj-ed2"/>
+                    </connections>
+                </button>
+                <tabView fixedFrame="YES" drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="6DS-XU-HoO">
+                    <rect key="frame" x="0.0" y="0.0" width="313" height="386"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="计时" identifier="" id="v29-SK-6qU">
+                            <view key="view" id="waa-Nw-rMo">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="386"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2i-Lf-Nia" customClass="OGCircularBarView" customModule="EyeSaver" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="136" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-FZ-Boo">
+                                                <rect key="frame" x="57" y="112" width="87" height="33"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" alignment="center" placeholderString="20:00" id="RGZ-hf-k36">
+                                                    <font key="font" size="24" name="Arial-Black"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <binding destination="-2" name="displayPatternValue1" keyPath="self.tvTimeDisplay" id="4Lb-Ac-ufM">
+                                                        <dictionary key="options">
+                                                            <string key="NSDisplayPattern">%{value1}@</string>
+                                                        </dictionary>
+                                                    </binding>
+                                                </connections>
+                                            </textField>
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-MA-QYN">
+                                                <rect key="frame" x="80" y="52" width="40" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="startIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kvX-sj-cK1">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="toggleTimer:" target="-2" id="R8u-Bb-zyc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </customView>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qov-hn-FHW">
+                                        <rect key="frame" x="277" y="359" width="36" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="helpIcon" imagePosition="overlaps" alignment="center" lineBreakMode="charWrapping" state="on" imageScaling="proportionallyDown" inset="2" id="SlH-jD-lZa">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="openHelpLink:" target="-2" id="Ugv-t2-jvO"/>
+                                        </connections>
+                                    </button>
+                                    <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-u9-AFl">
+                                        <rect key="frame" x="162" y="77" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" ambiguous="YES" id="wsL-PZ-cU5">
+                                            <rect key="frame" x="1" y="1" width="92" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-1b-WIn">
+                                                    <rect key="frame" x="6" y="3" width="80" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" title="跳过" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="Jpk-1V-fAu">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                                    </buttonCell>
+                                                    <color key="contentTintColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                    <connections>
+                                                        <action selector="skipTimer:" target="-2" id="vDX-pa-eay"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="borderColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    </box>
+                                    <box fixedFrame="YES" boxType="custom" cornerRadius="3" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="nl4-rW-GVw">
+                                        <rect key="frame" x="56" y="77" width="92" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" ambiguous="YES" id="OCo-RT-jOa">
+                                            <rect key="frame" x="1" y="1" width="90" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBY-7r-peK">
+                                                    <rect key="frame" x="5" y="2" width="80" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="smallSquare" title="重置" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" inset="2" id="O3a-H3-mFw">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <color key="contentTintColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                                    <connections>
+                                                        <action selector="resetTimer:" target="-2" id="AK2-9U-vGk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="borderColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    </box>
+                                    <box fixedFrame="YES" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="bKK-JE-LLK">
+                                        <rect key="frame" x="-3" y="-4" width="319" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" ambiguous="YES" id="kQd-bq-Dcx">
+                                            <rect key="frame" x="3" y="3" width="313" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVi-cP-rgZ">
+                                                    <rect key="frame" x="22" y="11" width="203" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <sliderCell key="cell" controlSize="small" state="on" alignment="left" maxValue="8" tickMarkPosition="below" numberOfTickMarks="17" allowsTickMarkValuesOnly="YES" sliderType="linear" id="ePB-0t-gtk"/>
+                                                    <connections>
+                                                        <action selector="selectStopInterval:" target="-2" id="gyt-Ei-sra"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-iX-IWa">
+                                                    <rect key="frame" x="232" y="13" width="61" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="0:00:00" id="ikz-Ox-w3b">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </box>
+                                </subviews>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="设置" identifier="" id="Mhm-9u-jYT">
+                            <view key="view" ambiguous="YES" id="lce-ol-X2G">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="386"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9B1-Q6-zpy">
+                                        <rect key="frame" x="52" y="267" width="101" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="状态栏显示计时:" id="vi4-i3-tup">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQx-d1-lte">
+                                        <rect key="frame" x="92" y="297" width="61" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="开机启动:" id="l9c-8J-5ir">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-dn-PNk">
+                                        <rect key="frame" x="8" y="177" width="145" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="鼠标右键双击跳过休息: " id="F9R-Jj-26q">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField toolTip="下个周期生效" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-XC-PME">
+                                        <rect key="frame" x="29" y="237" width="124" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="工作时长(建议20m):" id="U6f-K7-EIM">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField toolTip="下个周期生效" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B48-uD-Dab">
+                                        <rect key="frame" x="33" y="207" width="120" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="休息时长(建议20s):" id="Gvm-w4-mZH">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7x-i1-8aR">
+                                        <rect key="frame" x="35" y="87" width="118" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="提示语(建议8字内):" id="2DO-Ob-pyN">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GT-An-1bl">
+                                        <rect key="frame" x="25" y="117" width="128" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="锁屏暂停, 解锁恢复:" id="OkI-pG-B4i">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mCZ-6C-RlG">
+                                        <rect key="frame" x="252" y="237" width="34" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="20m" id="sVA-oH-IOO">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHz-BB-R5Z">
+                                        <rect key="frame" x="39" y="147" width="114" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="长按空格跳过休息:" id="s7r-AM-Ppb">
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-md-Q5p">
+                                        <rect key="frame" x="255" y="207" width="34" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="20s" id="P2l-9R-KA5">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-Kt-eWZ">
+                                        <rect key="frame" x="157" y="266" width="49" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="启用" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="4Nz-tA-jmW">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="enableMenubarTimer:" target="-2" id="Cy5-F2-QpU"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taz-RQ-5By">
+                                        <rect key="frame" x="157" y="176" width="61" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="启用" bezelStyle="regularSquare" imagePosition="left" inset="2" id="mon-MR-1SP">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="enableRightClick:" target="-2" id="fEC-vP-46Z"/>
+                                        </connections>
+                                    </button>
+                                    <slider toolTip="下个计时周期生效" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRj-ZH-vFV">
+                                        <rect key="frame" x="159" y="206" width="88" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" minValue="20" maxValue="120" doubleValue="20" tickMarkPosition="below" numberOfTickMarks="11" allowsTickMarkValuesOnly="YES" sliderType="linear" id="hrD-Hb-4lq"/>
+                                        <connections>
+                                            <action selector="selectRelaxTimeLength:" target="-2" id="pga-fZ-GY4"/>
+                                        </connections>
+                                    </slider>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xr2-nr-pNc">
+                                        <rect key="frame" x="157" y="146" width="49" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="启用" bezelStyle="regularSquare" imagePosition="left" inset="2" id="hAw-pp-Ok5">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="enableSpace:" target="-2" id="qrw-XL-Mtu"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-i7-Ygq">
+                                        <rect key="frame" x="157" y="296" width="49" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="启用" bezelStyle="regularSquare" imagePosition="left" inset="2" id="F3v-lh-OFw">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="launchAtLogin:" target="-2" id="YNS-3t-hKD"/>
+                                        </connections>
+                                    </button>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kk4-tZ-JnD">
+                                        <rect key="frame" x="159" y="84" width="128" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" placeholderString="站起来，看远方" usesSingleLineMode="YES" bezelStyle="round" id="oI4-8F-sem">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klm-QV-j6z">
+                                        <rect key="frame" x="271" y="14" width="36" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="aboutIcon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="xgh-CG-6Kl">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="openAbout:" target="-2" id="Iva-eB-BJe"/>
+                                        </connections>
+                                    </button>
+                                    <slider toolTip="下个计时周期生效" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7B-ZD-hIU">
+                                        <rect key="frame" x="159" y="236" width="88" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <sliderCell key="cell" controlSize="small" state="on" alignment="left" minValue="20" maxValue="60" doubleValue="20" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="7dO-CF-urI"/>
+                                        <connections>
+                                            <action selector="selectWorkTimeLength:" target="-2" id="Dfd-2e-fKS"/>
+                                        </connections>
+                                    </slider>
+                                    <button toolTip="锁屏不会影响计时周期" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-3z-b7C">
+                                        <rect key="frame" x="157" y="116" width="111" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="启用(建议勾选)" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xtq-67-rEJ">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="disableWhenLockScreen:" target="-2" id="Q7v-L5-rUH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                </tabView>
+                <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W83-aA-6Cd">
+                    <rect key="frame" x="103" y="357" width="108" height="20"/>
+                    <segmentedCell key="cell" borderStyle="border" alignment="left" segmentDistribution="fillEqually" style="roundRect" trackingMode="selectOne" id="nfB-hA-PR3">
+                        <font key="font" metaFont="system"/>
+                        <segments>
+                            <segment label="计时" selected="YES"/>
+                            <segment label="设置" tag="1"/>
+                        </segments>
+                    </segmentedCell>
+                    <connections>
+                        <action selector="segmentControlClick:" target="-2" id="uT4-El-tSP"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <constraints>
+                <constraint firstItem="W83-aA-6Cd" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="R2Z-Hq-668"/>
+                <constraint firstItem="W83-aA-6Cd" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Wyd-dG-4U5"/>
+            </constraints>
+            <point key="canvasLocation" x="694.5" y="-443"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSStopProgressTemplate" width="11" height="11"/>
+        <image name="aboutIcon" width="36" height="36"/>
+        <image name="helpIcon" width="36" height="36"/>
+        <image name="startIcon" width="28" height="28"/>
+    </resources>
+</document>
